@@ -30,6 +30,13 @@ function onReady() {
       //empty the input
       newToDoText.value = '';
   });
+
+  toDoList.addEventListener('submit', event => {
+      event.preventDefault();
+
+      // Remove the li from the To-do List
+      toDoList.removeChild(newLi);
+  });
 }
 
 window.onload = function() {
