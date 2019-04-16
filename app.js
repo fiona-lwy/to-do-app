@@ -18,24 +18,29 @@ function onReady() {
       // set the input's type to checkbox
       checkbox.type = "checkbox";
 
+      // create a delete button
+      let deleteBtn = document.createElement('button');
+
+      deleteBtn.textContent = "Delete";
+
+      deleteBtn.addEventListener('click', function(){
+          toDoList.removeChild(this.parentElement);
+      })
+
       // set the title
       newLi.textContent = title;
 
       // attach the checkbox to the li
       newLi.appendChild(checkbox);
 
+      // attach the delete button to the li
+      newLi.appendChild(deleteBtn);
+
       // attach the li to the ul
       toDoList.appendChild(newLi);
 
       //empty the input
       newToDoText.value = '';
-  });
-
-  toDoList.addEventListener('submit', event => {
-      event.preventDefault();
-
-      // Remove the li from the To-do List
-      toDoList.removeChild(newLi);
   });
 }
 
