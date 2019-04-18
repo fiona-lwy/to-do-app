@@ -14,16 +14,18 @@ function onReady() {
 
       // create a new input
       let checkbox = document.createElement('input');
+      checkbox.className = 'mdl-checkbox__input';
 
       // set the input's type to checkbox
       checkbox.type = "checkbox";
 
       // create a delete button
       let deleteBtn = document.createElement('button');
+      deleteBtn.className = 'mdl-button mdl-js-button mdl-button--raised mdl-button--colored';
 
       deleteBtn.textContent = "Delete";
 
-      deleteBtn.addEventListener('click', function(){
+      deleteBtn.addEventListener('click', function(event){
           toDoList.removeChild(this.parentElement);
       })
 
