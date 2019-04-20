@@ -28,9 +28,11 @@ function onReady() {
 
     toDos.forEach(function(toDo){
       const newLi = document.createElement('li');
+      newLi.className = "newLiStyle";
       const checkbox = document.createElement('input');
       checkbox.type = "checkbox";
       const delBtn = document.createElement('button');
+      delBtn.className = "mdl-button mdl-js-button mdl-button--raised mdl-button--colored delBtnStyle"
       delBtn.textContent = "delete!";
 
       delBtn.addEventListener('click', event => {

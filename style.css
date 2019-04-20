@@ -6,3 +6,18 @@
 .mdl-button {
   margin-left: 190px;
 }
+
+.newLiStyle{
+  height: 40px;
+  width: 390px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.delBtnStyle {
+  width: 90px;
+  float: right;
+}
