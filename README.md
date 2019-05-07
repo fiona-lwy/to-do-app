@@ -1,7 +1,7 @@
-# to-do-app
+# To-Do App
 
 The to-do app is created for users to add to-do tasks in a list.
-The input field empties itself after the user adds a to-do task.
+The input field automatically empties itself after the user adds a to-do task.
 
 There are three options users can do:
 
